@@ -2,11 +2,8 @@
   import PinkButton from './components/PinkButton.vue'
   import LiNav from './components/LiNav.vue'
   import LiAButton from './components/LiAButton.vue'
-<<<<<<< HEAD
   import SquareButton from './components/SquareButton.vue'
-=======
   import HappyUsers from './components/HappyUsers.vue'
->>>>>>> 8408179afb16e2d79726c85a206385e9f963dad1
 </script>
 
 <template>
