@@ -2,6 +2,7 @@
   import PinkButton from './components/PinkButton.vue'
   import LiNav from './components/LiNav.vue'
   import LiAButton from './components/LiAButton.vue'
+  import HappyUsers from './components/HappyUsers.vue'
 </script>
 
 <template>
@@ -53,31 +54,19 @@
     </div>
 
     <section class="container-middle">
+
+        
       <div class="container-icons-middle">
-        <div class="container-icons-middle__icon">
-          <img class="container-icons-middle__img" src="./assets/Images/usersIconFix.png" alt="Users icon" />
-          <p class="icons-middle__text">Identify Goals</p>
-        </div>
+        <HappyUsers propClass="container-icons-middle__icon" imgClass="container-icons-middle__img" srcPath="src/assets/Images/usersIconFix.png" pClass="icons-middle__text" pCount="" pMsg="Identify Goals"/>
 
-        <div class="container-icons-middle__icon">
-          <img class="container-icons-middle__img" src="./assets/Images/keyIconFix.png" alt="Keys icon" />
-          <p class="icons-middle__text">Situation Analysis</p>
-        </div>
+        <HappyUsers propClass="container-icons-middle__icon" imgClass="container-icons-middle__img" srcPath="src/assets/Images/keyIconFix.png" pClass="icons-middle__text" pCount="" pMsg="Situation Analysis"/>
 
-        <div class="container-icons-middle__icon">
-          <img class="container-icons-middle__img" src="./assets/Images/gearIconFix.png" alt="gear icon" />
-          <p class="icons-middle__text">Tasks Settings</p>
-        </div>
+        <HappyUsers propClass="container-icons-middle__icon" imgClass="container-icons-middle__img" srcPath="src/assets/Images/gearIconFix.png" pClass="icons-middle__text" pCount="" pMsg="Task Settings"/>
 
-        <div class="container-icons-middle__icon">
-          <img class="container-icons-middle__img" src="./assets/Images/messageIconFix.png" alt="message icon" />
-          <p class="icons-middle__text">Social Interaction</p>
-        </div>
+        <HappyUsers propClass="container-icons-middle__icon" imgClass="container-icons-middle__img" srcPath="src/assets/Images/messageIconFix.png" pClass="icons-middle__text" pCount="" pMsg="Social Interaction"/>
+        
+        <HappyUsers propClass="container-icons-middle__icon" imgClass="container-icons-middle__img" srcPath="src/assets/Images/rocketIconFix.png" pClass="icons-middle__text" pCount="" pMsg="Get Things Done"/>
 
-        <div class="container-icons-middle__icon">
-          <img class="container-icons-middle__img" src="./assets/Images/rocketIconFix.png" alt="rocket icon" />
-          <p class="icons-middle__text">Get Things Done</p>
-        </div>
       </div>
     </section>
     <section class="section-organize">
@@ -264,35 +253,15 @@
     </section>
 
     <section class="section-numbers">
-      <div class="section-numbers__container section-numbers__users">
-        <img src="./assets/Images/usersIconFix.png" alt="users icon" />
-        <p class="section-numbers__container__number">231</p>
-        <p>Happy Users</p>
-      </div>
+      <HappyUsers propClass="section-numbers__container section-numbers__users" srcPath="src/assets/Images/usersIconFix.png" pCount="350" pCountClass="section-numbers__container__number" pMsg="Happy Users"/>
+      
+      <HappyUsers propClass="section-numbers__container section-numbers__issues"  srcPath="src/assets/Images/keyIconFix.png" pCount="137" pCountClass="section-numbers__container__number" pMsg="Issues Solved"/>
 
-      <div class="section-numbers__container section-numbers__keys">
-        <img src="./assets/Images/keyIconFix.png" alt="keys icon" />
-        <p class="section-numbers__container__number">385</p>
-        <p>Issues Solved</p>
-      </div>
+      <HappyUsers propClass="section-numbers__container section-numbers__reviews" srcPath="src/assets/Images/gearIconFix.png" pCount="233" pCountClass="section-numbers__container__number" pMsg="Good Reviews"/>
 
-      <div class="section-numbers__container section-numbers__gear">
-        <img src="./assets/Images/gearIconFix.png" alt="gear icon" />
-        <p class="section-numbers__container__number">159</p>
-        <p>Good Reviews</p>
-      </div>
+      <HappyUsers propClass="section-numbers__container section-numbers__case" srcPath="src/assets/Images/messageIconFix.png" pCount="127" pCountClass="section-numbers__container__number" pMsg="Case Studies"/>
 
-      <div class="section-numbers__container section-numbers__messages">
-        <img src="./assets/Images/messageIconFix.png" alt="messages icon" />
-        <p class="section-numbers__container__number">127</p>
-        <p>Case Studies</p>
-      </div>
-
-      <div class="section-numbers__container section-numbers__rocket">
-        <img src="./assets/Images/rocketIconFix.png" alt="rocket icon" />
-        <p class="section-numbers__container__number">211</p>
-        <p>Orders Received</p>
-      </div>
+      <HappyUsers propClass="section-numbers__container section-numbers__orders" srcPath="src/assets/Images/rocketIconFix.png" pCount="211" pCountClass="section-numbers__container__number" pMsg="Orders Received"/>
     </section>
 
     <section class="section-bottom">
@@ -655,7 +624,6 @@ h1 {
     transition: all 0.2s;
 }
 
-/* section calendar */
 .section-calendar {
     display: flex;
     justify-content: center;
@@ -942,24 +910,6 @@ margin: 0 auto;
     justify-content: center;
     background-color: #e8eff6;
     padding: 60px;
-}
-
-.section-numbers__container {
-    text-align: center;
-    font-size: 16px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.section-numbers__container img {
-    width: 60px;
-    height: 60px;
-}
-
-.section-numbers__container__number {
-    font-size: 2rem;
-    font-weight: 700;
-    opacity: 0.8;
 }
 
 .section-bottom {
