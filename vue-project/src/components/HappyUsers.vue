@@ -1,43 +1,99 @@
-<script>
+<script setup>
+  defineProps({
+    srcPath: {
+      type: String,
+      required: true
+    },
 
+    pMsg: {
+      type: String,
+      required: true
+    },
+
+    pCount: {
+      type: String,
+      required: true,
+      default: ""
+    },
+
+    pCountClass: {
+      type: String,
+      required: true
+    },
+
+    propClass: {
+      type: String,
+      required: true
+    },
+
+    pClass: {
+      type: String
+    },
+    
+    imgClass: {
+      type: String,
+      required: true
+    }
+  })
 </script>
 
 <template>
-
-<section class="section-numbers">
-      <div class="section-numbers__container section-numbers__users">
-        <img src="./assets/Images/usersIconFix.png" alt="users icon" />
-        <p class="section-numbers__container__number">231</p>
-        <p>Happy Users</p>
-      </div>
-
-      <div class="section-numbers__container section-numbers__keys">
-        <img src="./assets/Images/keyIconFix.png" alt="keys icon" />
-        <p class="section-numbers__container__number">385</p>
-        <p>Issues Solved</p>
-      </div>
-
-      <div class="section-numbers__container section-numbers__gear">
-        <img src="./assets/Images/gearIconFix.png" alt="gear icon" />
-        <p class="section-numbers__container__number">159</p>
-        <p>Good Reviews</p>
-      </div>
-
-      <div class="section-numbers__container section-numbers__messages">
-        <img src="./assets/Images/messageIconFix.png" alt="messages icon" />
-        <p class="section-numbers__container__number">127</p>
-        <p>Case Studies</p>
-      </div>
-
-      <div class="section-numbers__container section-numbers__rocket">
-        <img src="./assets/Images/rocketIconFix.png" alt="rocket icon" />
-        <p class="section-numbers__container__number">211</p>
-        <p>Orders Received</p>
-      </div>
-    </section>
-    
+      <div v-bind:class="propClass">
+        <img v-bind:class="imgClass" v-bind:src="srcPath" alt="users icon" />
+        <p v-bind:class="pCountClass">{{ pCount }}</p>
+        <p v-bind:class="pClass">{{ pMsg }}</p>
+      </div>   
 </template>
 
 <style lang="css">
-    
+
+.container-middle {
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+.section-numbers__container {
+    text-align: center;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.section-numbers__container img {
+    width: 60px;
+    height: 60px;
+}
+
+.section-numbers__container__number {
+    font-size: 2rem;
+    font-weight: 700;
+    opacity: 0.8;
+}
+.container-icons-middle {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-icons-middle__img {
+    align-self: center;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.container-icons-middle__icon {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    flex-direction: column;
+    background-color: #ebe7fa;
+    border-radius: 50%;
+
+}
+
+.icons-middle__text {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
 </style>
