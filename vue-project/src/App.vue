@@ -5,10 +5,12 @@
   import SquareButton from './components/SquareButton.vue'
   import HappyUsers from './components/HappyUsers.vue'
   import Review from './components/ReviewSection.vue'
+  import LiFooter from './components/LiFooter.vue'
+  import LiImg from './components/LiImg.vue'
 </script>
 
 <template>
-  <body>
+ 
   <header>
     <div>
       <a href="#"><img id="top-icon" src="./assets/Images/logo.svg" alt="top left icon" /></a>
@@ -57,7 +59,6 @@
 
     <section class="container-middle">
 
-        
       <div class="container-icons-middle">
         <HappyUsers propClass="container-icons-middle__icon" imgClass="container-icons-middle__img" srcPath="src/assets/Images/usersIconFix.png" pClass="icons-middle__text" pCount="" pMsg="Identify Goals"/>
 
@@ -146,115 +147,96 @@
           </div>
         </div>
         
-          <img id="calendar-image" src="./assets/Images/description-2-app.png" alt="imagen fondo 2" />
-        
+        <img id="calendar-image" src="./assets/Images/description-2-app.png" alt="imagen fondo 2" />
+      </section>
 
-    </section>
+      <Review :optionA="true" />
+      <Review :imgs="true" />  
+	    <Review :optionB="true" />
 
-    <Review :optionA="true" />
-    <Review :imgs="true" />  
-	<Review :optionB="true" />
-
-    <section class="section-numbers">
-      <HappyUsers propClass="section-numbers__container section-numbers__users" srcPath="src/assets/Images/usersIconFix.png" pCount="350" pCountClass="section-numbers__container__number" pMsg="Happy Users"/>
+      <section class="section-numbers">
+        <HappyUsers propClass="section-numbers__container section-numbers__users" srcPath="src/assets/Images/usersIconFix.png" pCount="350" pCountClass="section-numbers__container__number" pMsg="Happy Users"/>
       
-      <HappyUsers propClass="section-numbers__container section-numbers__issues"  srcPath="src/assets/Images/keyIconFix.png" pCount="137" pCountClass="section-numbers__container__number" pMsg="Issues Solved"/>
+        <HappyUsers propClass="section-numbers__container section-numbers__issues"  srcPath="src/assets/Images/keyIconFix.png" pCount="137" pCountClass="section-numbers__container__number" pMsg="Issues Solved"/>
 
-      <HappyUsers propClass="section-numbers__container section-numbers__reviews" srcPath="src/assets/Images/gearIconFix.png" pCount="233" pCountClass="section-numbers__container__number" pMsg="Good Reviews"/>
+        <HappyUsers propClass="section-numbers__container section-numbers__reviews" srcPath="src/assets/Images/gearIconFix.png" pCount="233" pCountClass="section-numbers__container__number" pMsg="Good Reviews"/>
 
-      <HappyUsers propClass="section-numbers__container section-numbers__case" srcPath="src/assets/Images/messageIconFix.png" pCount="127" pCountClass="section-numbers__container__number" pMsg="Case Studies"/>
+        <HappyUsers propClass="section-numbers__container section-numbers__case" srcPath="src/assets/Images/messageIconFix.png" pCount="127" pCountClass="section-numbers__container__number" pMsg="Case Studies"/>
 
-      <HappyUsers propClass="section-numbers__container section-numbers__orders" srcPath="src/assets/Images/rocketIconFix.png" pCount="211" pCountClass="section-numbers__container__number" pMsg="Orders Received"/>
-    </section>
+        <HappyUsers propClass="section-numbers__container section-numbers__orders" srcPath="src/assets/Images/rocketIconFix.png" pCount="211" pCountClass="section-numbers__container__number" pMsg="Orders Received"/>
+      </section>
 
-    <section class="section-bottom">
-      <div class="section-bottom__image">
-        <img id="phone-image-bottom" src="./assets/Images/download-iphone.png" alt="imagen fondo 4" />
-      </div>
+      <section class="section-bottom">
+        <div class="section-bottom__image">
+          <img id="phone-image-bottom" src="./assets/Images/download-iphone.png" alt="imagen fondo 4" />
+        </div>
       
       <div class="section-bottom__container">
-      <p class="section-bottom__container__p">
-        Do you feel like you're wasting time with small stuff instead of
-        working towards your goals? Start using Sync to organize your time and
-        get a grip on your personal development
-      </p>
+        <p class="section-bottom__container__p">
+          Do you feel like you're wasting time with small stuff instead of
+          working towards your goals? Start using Sync to organize your time and
+          get a grip on your personal development
+        </p>
 
-      <div class="button-download">
-        <PinkButton altText="Apple logo" hrefTo="http://https://factoriaf5.org/" msg="Download" imageURI="./src/assets/Images/apple.svg"/>
-        <PinkButton msg="Download" imageURI="./src/assets/Images/googleplay.svg"/>
+        <div class="button-download">
+          <PinkButton altText="Apple logo" hrefTo="http://https://factoriaf5.org/" msg="Download" imageURI="./src/assets/Images/apple.svg"/>
+          <PinkButton msg="Download" imageURI="./src/assets/Images/googleplay.svg"/>
+        </div>
       </div>
-    </div>
     </section>
   </main>
 
   <footer>
     <section class="section-footer">
-    <div class="footer-div">
-        
+      <div class="footer-div">
         <ul>
-            <h5>Contact Info</h5>
-            <li><svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>22 Innovation Street, CA, US</li>
-            <li><svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>office@syncmobile.com</li>
-            <li><svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>+44 376 945 23</li>
+          <h5>Contact Info</h5>
+          <liFooter viewBoxp="0 0 384 512" pathd="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" msg="22 Innovation Street, CA, US"/>
+          <!--
+          <li><svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>22 Innovation Street, CA, US</li>
+        -->
+          <liFooter viewBoxp="0 0 512 512" pathd="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" msg="office@syncmobile.com"/>
+          <!--
+            <li><svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.<path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>office@syncmobile.com</li>
+          -->
+          <liFooter viewBoxp="0 0 512 512" pathd="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" msg="+44 376 945 23"/>
+          <!--
+            <li><svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>+44 376 945 23</li>
+          -->
         </ul>
-    </div>
-    <div class="footer-div">
-      
+      </div>
+      <div class="footer-div">
         <ul>  
-            <h5>Value Links</h5>
-            <li>Terms & Conditions</li>
-            <li>Privacy Policy</li>
-            <li>Article Details</li>
+          <h5>Value Links</h5>
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
+          <li>Article Details</li>
         </ul>
-    </div>
-    <div class="footer-div">
-        
+      </div>
+      <div class="footer-div">
         <ul>
-            <h5>Other Apps</h5>
-            <li>Scientific Calculator</li>
-            <li>Advanced Timer</li>
-            <li>Music Store</li>
+          <h5>Other Apps</h5>
+          <li>Scientific Calculator</li>
+          <li>Advanced Timer</li>
+          <li>Music Store</li>
         </ul>
-    </div>
-    <div class="footer-div">
+      </div>
+      <div class="footer-div">
         <div class="div-icons">
-        <ul>
-            <li><svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook footer-icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#fff" fill="#fff" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-              </svg></li>
-            
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter footer-icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#fff" fill="#fff" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" />
-            </svg>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-pinterest footer-icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M8 20l4 -9" />
-                <path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7" />
-                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-            </svg>
-        </li>
-        <li>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram footer-icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="0.5" stroke="#000000" fill="#fff" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                <path d="M16.5 7.5l0 .01" />
-            </svg>
-        </li>
-        </ul>
+          <ul>
+            <LiImg classP="footer-icon" srcPath="./src/assets/Images/facebook.svg" altP="Logo Facebook"/>
+            <LiImg classP="footer-icon" srcPath="./src/assets/Images/twitter.svg" altP="Logo Twitter"/> 
+            <LiImg classP="footer-icon" srcPath="./src/assets/Images/pinterest.svg" altP="Logo Pinterest"/>
+            <LiImg classP="footer-icon" srcPath="./src/assets/Images/instagram.svg" altP="Logo Instagram"/>
+          </ul>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
     <div class="copyright">
-        <p>Copyright &copy; 2020 Inovatik - All rights reserved</p>
+      <p>Copyright &copy; 2020 Inovatik - All rights reserved</p>
     </div>
 </footer>
-</body>
+
 </template>
 
 <style scoped>

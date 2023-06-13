@@ -1,19 +1,18 @@
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-    },
-    refh: {
+    defineProps({
+    msg: {
         type: String,
-        default:"#"
-    },
-    classparam: {
-        type: String,
-        default:""
-    }
-     
-})
+        required: true
+        },
+        refh: {
+            type: String,
+            default:"#"
+        },
+        classparam: {
+            type: String,
+            default:""
+        }
+    })
 </script>
 
 <template>

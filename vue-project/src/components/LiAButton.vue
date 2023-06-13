@@ -24,7 +24,7 @@
 </li>
 </template>
 
-<style>
+<style scoped>
 
 .button-download__top {
     -webkit-border-radius: 28px;
