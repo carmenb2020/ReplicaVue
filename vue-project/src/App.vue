@@ -2,6 +2,7 @@
   import PinkButton from './components/PinkButton.vue'
   import LiNav from './components/LiNav.vue'
   import LiAButton from './components/LiAButton.vue'
+  import SquareButton from './components/SquareButton.vue'
 </script>
 
 <template>
@@ -107,46 +108,9 @@
       <div class="section-calendar__left">
         
           <div class="section-calendar__container">
-            <button class="section-calendar__button button-schedule">
-              <svg xmlns="http://www.w3.org/2000/svg"
-                class="section-calendar__image button-schedule icon icon-tabler icon-tabler-clock-hour-4" width="44"
-                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-                <path d="M12 12l3 2" />
-                <path d="M12 7v5" />
-              </svg>
-              <p class="section-calendar__p">Schedule</p>
-            </button>
-            <button class="section-calendar__button">
-              <svg xmlns="http://www.w3.org/2000/svg" class="section-calendar__image icon icon-tabler icon-tabler-list"
-                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M9 6l11 0" />
-                <path d="M9 12l11 0" />
-                <path d="M9 18l11 0" />
-                <path d="M5 6l0 .01" />
-                <path d="M5 12l0 .01" />
-                <path d="M5 18l0 .01" />
-              </svg>
-              <p class="section-calendar__p">Tracking</p>
-            </button>
-            <button class="section-calendar__button">
-              <svg xmlns="http://www.w3.org/2000/svg"
-                class="section-calendar__image icon icon-tabler icon-tabler-calendar-event" width="44" height="44"
-                viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
-                <path d="M16 3l0 4" />
-                <path d="M8 3l0 4" />
-                <path d="M4 11l16 0" />
-                <path d="M8 15h2v2h-2z" />
-              </svg>
-              <p class="section-calendar__p">Organize</p>
-            </button>
+            <SquareButton msg="Schedule" srcPath="./src/assets/Images/schedule.svg"/>
+            <SquareButton msg="Tracking" srcPath="./src/assets/Images/tracking.svg"/>
+            <SquareButton msg="Organize" srcPath="./src/assets/Images/organize.svg"/>
           </div>
 
           <div>
@@ -677,26 +641,6 @@ h1 {
     display: flex;
     gap: 10px;
     padding: 10px;
-}
-
-.section-calendar__button {
-    display: flex;
-    width: 150px;
-    height: 40px;
-    border: none;
-    background-color: #fff;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5px;  
-}
-
-.section-calendar__button:hover {
-    background-color: #9a67e7;
-    color: #fff;
-}
-
-.section-calendar__button:hover svg {
-    stroke: #fff;
 }
 
 .section-calendar__image {
