@@ -125,7 +125,8 @@
       <div class="section-calendar__left">
         
           <div class="section-calendar__container">
-            <SquareButton msg="Schedule"/>
+            <SquareButton msg="Schedule" srcPath="./src/assets/Images/schedule.svg"/>
+
             <!-- <button class="section-calendar__button button-schedule">
               <svg xmlns="http://www.w3.org/2000/svg"
                 class="section-calendar__image button-schedule icon icon-tabler icon-tabler-clock-hour-4" width="44"
