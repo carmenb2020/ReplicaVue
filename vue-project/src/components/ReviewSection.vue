@@ -11,6 +11,10 @@ defineProps(
 		optionB: {
 			type: Boolean,
 			default: false,
+		},
+		imgs: {
+			type: Boolean,
+			default: false,
 		}
 	}
 );
@@ -46,6 +50,13 @@ const	reviewsB = ref([
 			<p class="user-name"><strong>{{ review.name }}</strong></p>
     	</div>
 	</section>
+	<div v-if="imgs" class="section-user__customers">
+    	<img class="section-user__customers__img" src="../assets/Images/customer-logo-1.png" alt="customer logo 1" />
+    	<img class="section-user__customers__img" src="../assets/Images/customer-logo-2.png" alt="customer logo 2" />
+    	<img class="section-user__customers__img" src="../assets/Images/customer-logo-3.png" alt="customer logo 3" />
+    	<img class="section-user__customers__img" src="../assets/Images/customer-logo-4.png" alt="customer logo 4" />
+    	<img class="section-user__customers__img" src="../assets/Images/customer-logo-5.png" alt="customer logo 5" />
+      </div>
 	<section class="review-section" v-if="optionB">
 		<div class="user-review-div" v-for="review in reviewsB" :key="review.id">
 			<img class="user-review-img" src="../assets/Images/iconoEstrellasFix.png" alt="review icon" />
@@ -83,6 +94,25 @@ const	reviewsB = ref([
 	margin: 0 auto;
     opacity: 0.7;
     padding: 20px;
+}
+
+.section-user__customers {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 111px;
+    margin: 5rem auto;
+    align-items: center;
+    grid-row: 3;
+    grid-column: 1 / 4;
+    background-color: #fff;
+}
+
+.section-user__customers__img {
+    width: 175px;
+    height: 35px;
+    padding: 50px;
+    background-color: #fff;
 }
 
 </style>
