@@ -25,7 +25,7 @@
               <a href="#">Privacy Policy</a>
             </div>
           </li>
-          <LiAButton classButton="button-download__top" msg1="Login" hrefTo="viewLogin"/>
+          <LiAButton classButton="button-download__top" msg1="Login" refh="https://vuejs.org/guide/introduction.html"/>
         </ul>
       </nav>
     </div>
