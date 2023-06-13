@@ -1,24 +1,8 @@
 <script setup>
-// import { RouterLink, RouterView } from 'vue-router'
-// import HelloWorld from './components/HelloWorld.vue'
   import HappyUsers from './components/HappyUsers.vue'
 </script>
 
 <template>
-  <!-- <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView /> -->
   <body>
   <header>
     <div>
@@ -57,7 +41,6 @@
         </p>
       </div>
 
-      <!--Buscar iconos como fuente-->
       <div class="button-download">
         <button class="button-download__button">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +203,6 @@
     <section class="section-user">
       <h2>User Testimonials</h2>
 
-      <!--Iconos Estrellas-->
 
       <div class="section-user__rick">
         <img class="section-user__rick__img" src="./assets/Images/iconoEstrellasFix.png" alt="icono valoraciones" />
