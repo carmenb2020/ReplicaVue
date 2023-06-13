@@ -1,6 +1,7 @@
 <script setup>
 // import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
+  import HappyUsers from './components/HappyUsers.vue'
 </script>
 
 <template>
@@ -102,7 +103,7 @@
 
         <div class="container-icons-middle__icon">
           <img class="container-icons-middle__img" src="./assets/Images/gearIconFix.png" alt="gear icon" />
-          <p class="icons-middle__text">Tasks Settings</p>
+          <p class="icons-middle__text">Task Settings</p>
         </div>
 
         <div class="container-icons-middle__icon">
@@ -297,35 +298,15 @@
     </section>
 
     <section class="section-numbers">
-      <div class="section-numbers__container section-numbers__users">
-        <img src="./assets/Images/usersIconFix.png" alt="users icon" />
-        <p class="section-numbers__container__number">231</p>
-        <p>Happy Users</p>
-      </div>
+      <HappyUsers srcPath="src/assets/Images/usersIconFix.png" pCount=350 pMsg="Happy Users"/>
+      
+      <HappyUsers srcPath="src/assets/Images/keyIconFix.png" pCount=137 pMsg="Issues Solved"/>
 
-      <div class="section-numbers__container section-numbers__keys">
-        <img src="./assets/Images/keyIconFix.png" alt="keys icon" />
-        <p class="section-numbers__container__number">385</p>
-        <p>Issues Solved</p>
-      </div>
+      <HappyUsers srcPath="src/assets/Images/gearIconFix.png" pCount=233 pMsg="Good Reviews"/>
 
-      <div class="section-numbers__container section-numbers__gear">
-        <img src="./assets/Images/gearIconFix.png" alt="gear icon" />
-        <p class="section-numbers__container__number">159</p>
-        <p>Good Reviews</p>
-      </div>
+      <HappyUsers srcPath="src/assets/Images/messageIconFix.png" pCount=127 pMsg="Case Studies"/>
 
-      <div class="section-numbers__container section-numbers__messages">
-        <img src="./assets/Images/messageIconFix.png" alt="messages icon" />
-        <p class="section-numbers__container__number">127</p>
-        <p>Case Studies</p>
-      </div>
-
-      <div class="section-numbers__container section-numbers__rocket">
-        <img src="./assets/Images/rocketIconFix.png" alt="rocket icon" />
-        <p class="section-numbers__container__number">211</p>
-        <p>Orders Received</p>
-      </div>
+      <HappyUsers srcPath="src/assets/Images/rocketIconFix.png" pCount=211 pMsg="Orders Received"/>
     </section>
 
     <section class="section-bottom">
@@ -997,24 +978,6 @@ margin: 0 auto;
     justify-content: center;
     background-color: #e8eff6;
     padding: 60px;
-}
-
-.section-numbers__container {
-    text-align: center;
-    font-size: 16px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.section-numbers__container img {
-    width: 60px;
-    height: 60px;
-}
-
-.section-numbers__container__number {
-    font-size: 2rem;
-    font-weight: 700;
-    opacity: 0.8;
 }
 
 .section-bottom {
