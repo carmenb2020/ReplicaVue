@@ -11,23 +11,46 @@
     },
 
     pCount: {
-      type: Number,
+      type: String,
+      required: true,
+      default: ""
+    },
+
+    pCountClass: {
+      type: String,
+      required: true
+    },
+
+    propClass: {
+      type: String,
+      required: true
+    },
+
+    pClass: {
+      type: String
+    },
+    
+    imgClass: {
+      type: String,
       required: true
     }
   })
 </script>
 
 <template>
-      <div class="section-numbers__container section-numbers__users">
-        <img v-bind:src="srcPath" alt="users icon" />
-        <p class="section-numbers__container__number">{{ pCount }}</p>
-        <p>{{ pMsg }}</p>
+      <div v-bind:class="propClass">
+        <img v-bind:class="imgClass" v-bind:src="srcPath" alt="users icon" />
+        <p v-bind:class="pCountClass">{{ pCount }}</p>
+        <p v-bind:class="pClass">{{ pMsg }}</p>
       </div>   
 </template>
 
 <style lang="css">
 
-
+.container-middle {
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
 .section-numbers__container {
     text-align: center;
     font-size: 16px;
@@ -44,5 +67,33 @@
     font-size: 2rem;
     font-weight: 700;
     opacity: 0.8;
+}
+.container-icons-middle {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-icons-middle__img {
+    align-self: center;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.container-icons-middle__icon {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    flex-direction: column;
+    background-color: #ebe7fa;
+    border-radius: 50%;
+
+}
+
+.icons-middle__text {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
 }
 </style>

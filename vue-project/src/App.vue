@@ -90,31 +90,19 @@
     </div>
 
     <section class="container-middle">
+
+        
       <div class="container-icons-middle">
-        <div class="container-icons-middle__icon">
-          <img class="container-icons-middle__img" src="./assets/Images/usersIconFix.png" alt="Users icon" />
-          <p class="icons-middle__text">Identify Goals</p>
-        </div>
+        <HappyUsers propClass="container-icons-middle__icon" imgClass="container-icons-middle__img" srcPath="src/assets/Images/usersIconFix.png" pClass="icons-middle__text" pCount="" pMsg="Identify Goals"/>
 
-        <div class="container-icons-middle__icon">
-          <img class="container-icons-middle__img" src="./assets/Images/keyIconFix.png" alt="Keys icon" />
-          <p class="icons-middle__text">Situation Analysis</p>
-        </div>
+        <HappyUsers propClass="container-icons-middle__icon" imgClass="container-icons-middle__img" srcPath="src/assets/Images/keyIconFix.png" pClass="icons-middle__text" pCount="" pMsg="Situation Analysis"/>
 
-        <div class="container-icons-middle__icon">
-          <img class="container-icons-middle__img" src="./assets/Images/gearIconFix.png" alt="gear icon" />
-          <p class="icons-middle__text">Task Settings</p>
-        </div>
+        <HappyUsers propClass="container-icons-middle__icon" imgClass="container-icons-middle__img" srcPath="src/assets/Images/gearIconFix.png" pClass="icons-middle__text" pCount="" pMsg="Task Settings"/>
 
-        <div class="container-icons-middle__icon">
-          <img class="container-icons-middle__img" src="./assets/Images/messageIconFix.png" alt="message icon" />
-          <p class="icons-middle__text">Social Interaction</p>
-        </div>
+        <HappyUsers propClass="container-icons-middle__icon" imgClass="container-icons-middle__img" srcPath="src/assets/Images/messageIconFix.png" pClass="icons-middle__text" pCount="" pMsg="Social Interaction"/>
+        
+        <HappyUsers propClass="container-icons-middle__icon" imgClass="container-icons-middle__img" srcPath="src/assets/Images/rocketIconFix.png" pClass="icons-middle__text" pCount="" pMsg="Get Things Done"/>
 
-        <div class="container-icons-middle__icon">
-          <img class="container-icons-middle__img" src="./assets/Images/rocketIconFix.png" alt="rocket icon" />
-          <p class="icons-middle__text">Get Things Done</p>
-        </div>
       </div>
     </section>
     <section class="section-organize">
@@ -298,15 +286,15 @@
     </section>
 
     <section class="section-numbers">
-      <HappyUsers srcPath="src/assets/Images/usersIconFix.png" pCount=350 pMsg="Happy Users"/>
+      <HappyUsers propClass="section-numbers__container section-numbers__users" srcPath="src/assets/Images/usersIconFix.png" pCount="350" pCountClass="section-numbers__container__number" pMsg="Happy Users"/>
       
-      <HappyUsers srcPath="src/assets/Images/keyIconFix.png" pCount=137 pMsg="Issues Solved"/>
+      <HappyUsers propClass="section-numbers__container section-numbers__issues"  srcPath="src/assets/Images/keyIconFix.png" pCount="137" pCountClass="section-numbers__container__number" pMsg="Issues Solved"/>
 
-      <HappyUsers srcPath="src/assets/Images/gearIconFix.png" pCount=233 pMsg="Good Reviews"/>
+      <HappyUsers propClass="section-numbers__container section-numbers__reviews" srcPath="src/assets/Images/gearIconFix.png" pCount="233" pCountClass="section-numbers__container__number" pMsg="Good Reviews"/>
 
-      <HappyUsers srcPath="src/assets/Images/messageIconFix.png" pCount=127 pMsg="Case Studies"/>
+      <HappyUsers propClass="section-numbers__container section-numbers__case" srcPath="src/assets/Images/messageIconFix.png" pCount="127" pCountClass="section-numbers__container__number" pMsg="Case Studies"/>
 
-      <HappyUsers srcPath="src/assets/Images/rocketIconFix.png" pCount=211 pMsg="Orders Received"/>
+      <HappyUsers propClass="section-numbers__container section-numbers__orders" srcPath="src/assets/Images/rocketIconFix.png" pCount="211" pCountClass="section-numbers__container__number" pMsg="Orders Received"/>
     </section>
 
     <section class="section-bottom">
@@ -691,7 +679,6 @@ h1 {
     transition: all 0.2s;
 }
 
-/* section calendar */
 .section-calendar {
     display: flex;
     justify-content: center;
