@@ -1,5 +1,5 @@
 <script setup>
-
+  import SquareButton from './components/SquareButton.vue'
 </script>
 
 <template>
@@ -125,7 +125,8 @@
       <div class="section-calendar__left">
         
           <div class="section-calendar__container">
-            <button class="section-calendar__button button-schedule">
+            <SquareButton msg="Schedule"/>
+            <!-- <button class="section-calendar__button button-schedule">
               <svg xmlns="http://www.w3.org/2000/svg"
                 class="section-calendar__image button-schedule icon icon-tabler icon-tabler-clock-hour-4" width="44"
                 height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
@@ -136,7 +137,7 @@
                 <path d="M12 7v5" />
               </svg>
               <p class="section-calendar__p">Schedule</p>
-            </button>
+            </button> -->
             <button class="section-calendar__button">
               <svg xmlns="http://www.w3.org/2000/svg" class="section-calendar__image icon icon-tabler icon-tabler-list"
                 width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
@@ -714,26 +715,6 @@ h1 {
     display: flex;
     gap: 10px;
     padding: 10px;
-}
-
-.section-calendar__button {
-    display: flex;
-    width: 150px;
-    height: 40px;
-    border: none;
-    background-color: #fff;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5px;  
-}
-
-.section-calendar__button:hover {
-    background-color: #9a67e7;
-    color: #fff;
-}
-
-.section-calendar__button:hover svg {
-    stroke: #fff;
 }
 
 .section-calendar__image {
