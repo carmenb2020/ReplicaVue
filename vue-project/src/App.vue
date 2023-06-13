@@ -1,5 +1,6 @@
 <script setup>
-
+  import LiNav from './components/LiNav.vue'
+  import LiAButton from './components/LiAButton.vue'
 </script>
 
 <template>
@@ -11,9 +12,9 @@
     <div>
       <nav>
         <ul class="top-menu">
-          <li><a href="#">Description</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Screens</a></li>
+          <LiNav msg="Description"/>
+          <LiNav msg="Features"/>
+          <LiNav msg="Screens"/>
           <li class="dropdown">
             <a href="#">Extra</a>
             <div class="dropdown-content">
@@ -22,9 +23,12 @@
               <a href="#">Privacy Policy</a>
             </div>
           </li>
+          <!--
           <li>
             <a href="https://factoriaf5.org/"><button class="button-download__top">Download</button></a>
           </li>
+          -->
+          <LiAButton msg="Download" refh="https://factoriaf5.org/" classbutton="button-download__top" />
         </ul>
       </nav>
     </div>
