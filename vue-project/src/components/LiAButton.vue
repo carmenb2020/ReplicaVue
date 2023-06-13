@@ -1,27 +1,26 @@
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-    },
-    refh: {
+    import PinkButton from './PinkButton.vue';
+    defineProps({
+    msg1: {
         type: String,
-        default:"#"
-    },
-    classbutton: {
-        type: String,
-        default:""
-    }
-     
-})
+        required: true
+        },
+        refh: {
+            type: String,
+            default:"#"
+        },
+        classButton: {
+            type: String,
+            default:""
+        }
+        
+    })
 
 
 </script>
 <template>
-<li>
-    <a :href="refh">
-        <button :class="classbutton">{{msg}}</button>
-    </a>
+<li>      
+    <PinkButton  :class="classButton" classOption="alternativeStyle" :msg="msg1" :hrefTo="refh"/>
 </li>
 </template>
 

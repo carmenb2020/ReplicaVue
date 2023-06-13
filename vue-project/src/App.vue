@@ -28,7 +28,7 @@
             <a href="https://factoriaf5.org/"><button class="button-download__top">Download</button></a>
           </li>
           -->
-          <LiAButton msg="Download" refh="https://factoriaf5.org/" classbutton="button-download__top" />
+          <LiAButton classButton="button-download__top" msg1="Login" hrefTo="viewLogin"/>
         </ul>
       </nav>
     </div>
