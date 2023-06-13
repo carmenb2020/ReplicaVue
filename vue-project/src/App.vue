@@ -181,11 +181,11 @@
       </div>
 
       <div class="section-user__customers">
-        <img class="section-user__customers__img" src="./assets/Images/customer-logo-1.png" alt="customer logo 1" />
-        <img class="section-user__customers__img" src="./assets/Images/customer-logo-2.png" alt="customer logo 2" />
-        <img class="section-user__customers__img" src="./assets/Images/customer-logo-3.png" alt="customer logo 3" />
-        <img class="section-user__customers__img" src="./assets/Images/customer-logo-4.png" alt="customer logo 4" />
-        <img class="section-user__customers__img" src="./assets/Images/customer-logo-5.png" alt="customer logo 5" />
+    	<img class="section-user__customers__img" src="./assets/Images/customer-logo-1.png" alt="customer logo 1" />
+    	<img class="section-user__customers__img" src="./assets/Images/customer-logo-2.png" alt="customer logo 2" />
+    	<img class="section-user__customers__img" src="./assets/Images/customer-logo-3.png" alt="customer logo 3" />
+    	<img class="section-user__customers__img" src="./assets/Images/customer-logo-4.png" alt="customer logo 4" />
+    	<img class="section-user__customers__img" src="./assets/Images/customer-logo-5.png" alt="customer logo 5" />
       </div>
 
       <div class="section-user__frank">
