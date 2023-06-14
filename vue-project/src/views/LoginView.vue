@@ -23,7 +23,7 @@
 
 <template>
     <section>
-        <h1>Welcome</h1>
+        <h2>Welcome</h2>
         <label for="email">Email</label>
         <input id="emailField" type="text" placeholder="Email">
         <label for="password">Password</label>
