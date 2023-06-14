@@ -23,7 +23,7 @@ import HappyUsers from '../components/HappyUsers.vue';
     </section>
 
     <div class="container-image-phone">
-      <img class="phone-image" src="./assets/Images/header-iphone.png" alt="iphone header" />
+      <img class="phone-image" src="../assets/Images/header-iphone.png" alt="iphone header" />
     </div>
 
     <section class="container-middle">

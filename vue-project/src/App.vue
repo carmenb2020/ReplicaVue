@@ -1,5 +1,6 @@
 <script setup>
-  // import PinkButton from './components/PinkButton.vue'
+  import { RouterLink, RouterView } from 'vue-router'
+  import PinkButton from './components/PinkButton.vue'
   import LiNav from './components/LiNav.vue'
   import LiAButton from './components/LiAButton.vue'
   //import SquareButton from './components/SquareButton.vue'
@@ -7,7 +8,6 @@
   // import Review from './components/ReviewSection.vue'
   import LiFooter from './components/LiFooter.vue'
   import LiImg from './components/LiImg.vue'
-  import FeaturesView from './views/FeaturesView.vue'
 </script>
 
 <template>
@@ -19,9 +19,9 @@
     <div>
       <nav>
         <ul class="top-menu">
-          <LiNav msg="Description"/>
-          <LiNav msg="Features"/>
-          <LiNav msg="Screens"/>
+          <RouterLink to="/"><LiNav msg="Description"/></RouterLink>
+          <RouterLink to="features"><LiNav msg="Features"/></RouterLink>
+          <RouterLink to="review"><LiNav msg="Screens"/></RouterLink>
           <li class="dropdown">
             <a href="#">Extra</a>
             <div class="dropdown-content">
@@ -35,6 +35,8 @@
       </nav>
     </div>
   </header>
+
+  <RouterView />
 
   <main><!--
     <section>
@@ -74,7 +76,7 @@
       </div>
     </section>-->
 
-    <FeaturesView />
+    <!-- <FeaturesView /> -->
 
     <!-- <section class="section-organize">
       <div class="section-organize__img">
