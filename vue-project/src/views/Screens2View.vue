@@ -17,7 +17,7 @@
       
     <section class="section-bottom">
         <div class="section-bottom__image">
-            <img id="phone-image-bottom" src="./assets/Images/download-iphone.png" alt="imagen fondo 4" />
+            <img id="phone-image-bottom" src="src/assets/Images/download-iphone.png" alt="imagen fondo 4" />
         </div>
     
         <div class="section-bottom__container">
@@ -28,8 +28,8 @@
             </p>
 
             <div class="button-download">
-                <PinkButton altText="Apple logo" hrefTo="http://https://factoriaf5.org/" msg="Download" imageURI="./src/assets/Images/apple.svg"/>
-                <PinkButton msg="Download" imageURI="./src/assets/Images/googleplay.svg"/>
+                <PinkButton altText="Apple logo" hrefTo="http://https://factoriaf5.org/" msg="Download" imageURI="src/assets/Images/apple.svg"/>
+                <PinkButton msg="Download" imageURI="src/assets/Images/googleplay.svg"/>
             </div>
         </div>
     </section>
