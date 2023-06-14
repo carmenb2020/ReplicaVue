@@ -35,7 +35,7 @@
     </div>
   </header>
 
-  <main>
+  <main><!--
     <section>
       <div class="mobile-landing">
         <h1 class="mobile-landing__title">Mobile App Landing Page</h1>
@@ -71,7 +71,7 @@
         <HappyUsers propClass="container-icons-middle__icon" imgClass="container-icons-middle__img" srcPath="src/assets/Images/rocketIconFix.png" pClass="icons-middle__text" pCount="" pMsg="Get Things Done"/>
 
       </div>
-    </section>
+    </section>-->
     <section class="section-organize">
       <div class="section-organize__img">
         <img id="organize-image" src="./assets/Images/description-1-app.png" alt="imagen fondo 1" />
