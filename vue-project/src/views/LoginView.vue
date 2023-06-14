@@ -22,15 +22,16 @@
 </script>
 
 <template>
-    <section>
+    <form>
         <h2>Welcome</h2>
         <label for="email">Email</label>
         <input id="emailField" type="text" placeholder="Email">
         <label for="password">Password</label>
         <input id="passwordField" type="password" placeholder="Password">
         <button id="showButton" @click="show()">Show password</button>
-        <input @click="check()" type="submit">
-    </section>
+        <input @click="check()" type="submit" value="Sign in">
+        <button>Forgot password?</button>
+    </form>
 </template>
 
 <style>
