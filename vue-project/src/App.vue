@@ -2,7 +2,7 @@
   import PinkButton from './components/PinkButton.vue'
   import LiNav from './components/LiNav.vue'
   import LiAButton from './components/LiAButton.vue'
-  // import SquareButton from './components/SquareButton.vue'
+  //import SquareButton from './components/SquareButton.vue'
   import HappyUsers from './components/HappyUsers.vue'
   import Review from './components/ReviewSection.vue'
   import LiFooter from './components/LiFooter.vue'
