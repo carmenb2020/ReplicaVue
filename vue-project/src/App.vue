@@ -157,6 +157,7 @@
 	    <Review :optionB="true" />
       -->
 
+      <!-- Componente Screens2View
       <section class="section-numbers">
         <HappyUsers propClass="section-numbers__container section-numbers__users" srcPath="src/assets/Images/usersIconFix.png" pCount="350" pCountClass="section-numbers__container__number" pMsg="Happy Users"/>
       
@@ -168,7 +169,7 @@
 
         <HappyUsers propClass="section-numbers__container section-numbers__orders" srcPath="src/assets/Images/rocketIconFix.png" pCount="211" pCountClass="section-numbers__container__number" pMsg="Orders Received"/>
       </section>
-      <!--
+      
       <section class="section-bottom">
         <div class="section-bottom__image">
           <img id="phone-image-bottom" src="./assets/Images/download-iphone.png" alt="imagen fondo 4" />
