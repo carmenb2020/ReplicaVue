@@ -2,11 +2,12 @@
   import PinkButton from './components/PinkButton.vue'
   import LiNav from './components/LiNav.vue'
   import LiAButton from './components/LiAButton.vue'
-  import SquareButton from './components/SquareButton.vue'
+  //import SquareButton from './components/SquareButton.vue'
   import HappyUsers from './components/HappyUsers.vue'
   import Review from './components/ReviewSection.vue'
   import LiFooter from './components/LiFooter.vue'
   import LiImg from './components/LiImg.vue'
+  import FeaturesView from './views/FeaturesView.vue'
 </script>
 
 <template>
@@ -35,7 +36,7 @@
     </div>
   </header>
 
-  <main>
+  <main><!--
     <section>
       <div class="mobile-landing">
         <h1 class="mobile-landing__title">Mobile App Landing Page</h1>
@@ -71,8 +72,11 @@
         <HappyUsers propClass="container-icons-middle__icon" imgClass="container-icons-middle__img" srcPath="src/assets/Images/rocketIconFix.png" pClass="icons-middle__text" pCount="" pMsg="Get Things Done"/>
 
       </div>
-    </section>
-    <section class="section-organize">
+    </section>-->
+
+    <FeaturesView />
+
+    <!-- <section class="section-organize">
       <div class="section-organize__img">
         <img id="organize-image" src="./assets/Images/description-1-app.png" alt="imagen fondo 1" />
       </div>
@@ -88,8 +92,7 @@
           <li>Analyse and evaluate your current status and productivity</li>
           <li>Begin monitoring your day to day routine with Sync app</li>
           <li>See the improved results in no more than a couple of weeks</li>
-        </ul>
-        <!--<button class="lightbox-button">LIGHTBOX</button>-->        
+        </ul>     
         <PinkButton msg="lightbox" imageURI="./src/assets/Images/googleplay.svg"
         classOption="alternativeNoImgPinkStyle"/>
       </div>
@@ -138,8 +141,6 @@
             </div>
 
             <div class="container-buttons__privacy">
-              <!--<button class="button-terms">TERMS</button>
-              <button class="button-privacy">PRIVACY</button>-->
               <PinkButton classOption="alternativeNoImgPinkStyle"/>
                 <PinkButton classOption="alternativeStyle" msg="Privacity"/>
               
@@ -148,11 +149,13 @@
         </div>
         
         <img id="calendar-image" src="./assets/Images/description-2-app.png" alt="imagen fondo 2" />
-      </section>
+      </section> -->
 
+      <!--
       <Review :optionA="true" />
       <Review :imgs="true" />  
 	    <Review :optionB="true" />
+      -->
 
       <section class="section-numbers">
         <HappyUsers propClass="section-numbers__container section-numbers__users" srcPath="src/assets/Images/usersIconFix.png" pCount="350" pCountClass="section-numbers__container__number" pMsg="Happy Users"/>
@@ -368,7 +371,7 @@ h1 {
     margin: 0px auto 2rem auto ;
 }
 
-.button-download__icon {
+/* .button-download__icon {
     width: 22px;
     height: 22px;
 }
@@ -400,7 +403,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-}
+} */
 /*
 .button-download__button p {
     margin: auto;
@@ -455,7 +458,7 @@ h1 {
     text-align: center;
     margin-top: 50px;
 }
-
+/* 
 .section-organize {
     display: flex;
     justify-content: space-around;
@@ -486,9 +489,9 @@ h1 {
     padding: 15px;
     list-style: square;
     opacity: 0.6;
-}
+} */
 
-#organize-title {
+/* #organize-title {
     font-size: 40px;
     margin-bottom: 1.5rem;
 }
@@ -508,16 +511,16 @@ h1 {
     color: #ff556e;
     border: 2px solid #ff556e;
     transition: all 0.2s;
-}
+} */
 
-.section-calendar {
+/* .section-calendar {
     display: flex;
     justify-content: center;
     background-color: #e8eff6;
     padding: 128px 0;
-}
+} */
 
-.section-calendar__left {
+/* .section-calendar__left {
     display: flex;
     flex-direction: column;
     width: 570px;
@@ -541,24 +544,24 @@ h1 {
 .section-calendar__p {
     padding: 0 5px;
     font-weight: 700;
-}
+} */
 
-.button-schedule {
+/* .button-schedule {
     background-color: #9a67e7;
     color: #fff;
 }
 
 .button-schedule svg {
     stroke: #fff;
-}
+} */
 
-#calendar-image {
+/* #calendar-image {
     width: 497px;
     height: 586px;
     position: relative;
-}
+} */
 
-.check-icon {
+/* .check-icon {
     width: 22px;
     height: 22px;
 }
@@ -571,9 +574,9 @@ h1 {
 
 .section-calendar__checklist p {
     margin-left: 10px;
-}
+} */
 
-.button-terms {
+/* .button-terms {
     background-color: #ff556e;
     color: #fff;
     border-radius: 28px;
@@ -609,12 +612,12 @@ h1 {
     background-color: #000000;
     color: #ebe7fa;
     transition: all 0.2s;
-}
+} */
 
-.check-icon {
+/* .check-icon {
 filter: invert(56%) sepia(95%) saturate(370%) hue-rotate(111deg)
     brightness(96%) contrast(93%);
-}
+} */
 
 .section-numbers {
     display: flex;
