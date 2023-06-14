@@ -16,7 +16,7 @@
 
     const check = () => {
     if (email.value == "" || password.value == ""){
-        alert("Please introduce an e-mail and password");
+        alert("Please introduce your email and password");
     }
     }
 </script>
