@@ -368,7 +368,7 @@ h1 {
     margin: 0px auto 2rem auto ;
 }
 
-.button-download__icon {
+/* .button-download__icon {
     width: 22px;
     height: 22px;
 }
@@ -400,7 +400,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-}
+} */
 /*
 .button-download__button p {
     margin: auto;
