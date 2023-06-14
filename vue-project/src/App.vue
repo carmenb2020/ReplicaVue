@@ -150,9 +150,11 @@
         <img id="calendar-image" src="./assets/Images/description-2-app.png" alt="imagen fondo 2" />
       </section>
 
+      <!--
       <Review :optionA="true" />
       <Review :imgs="true" />  
 	    <Review :optionB="true" />
+      -->
 
       <section class="section-numbers">
         <HappyUsers propClass="section-numbers__container section-numbers__users" srcPath="src/assets/Images/usersIconFix.png" pCount="350" pCountClass="section-numbers__container__number" pMsg="Happy Users"/>
