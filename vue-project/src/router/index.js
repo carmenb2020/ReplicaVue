@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import ScreensView from '../views/ScreensView.vue'
+import Screens2View from '../views/Screens2View.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'screens',
-      component: ScreensView
+      name: 'screens2',
+      component: Screens2View
     },
     
   ]
