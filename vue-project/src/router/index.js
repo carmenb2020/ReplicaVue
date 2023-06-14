@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/DescriptionView.vue'
-import ReviewView from '../views/ScreensView.vue'
+import ReviewView from '../views/ReviewView.vue'
 import FeaturesView from '../views/FeaturesView.vue'
-import Screens2View from '../views/Screens2View.vue'
+import ScreensView from '../views/ScreensView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,7 +15,7 @@ const router = createRouter({
     {
       path: '/screens',
       name: 'screens',
-      component: Screens2View
+      component: ScreensView
     },
     {
       path: '/about',
