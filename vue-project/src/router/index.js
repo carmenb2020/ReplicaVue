@@ -30,11 +30,12 @@ const router = createRouter({
       name: 'review',
       component: ReviewView
     },
-    {
-      path: '/features',
-      name: 'features',
-      component: FeaturesView
-    }
+	{
+		path: '/features',
+		name: 'features',
+		component: FeaturesView
+	  }
+    
   ]
 })
 
