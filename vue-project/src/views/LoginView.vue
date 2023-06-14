@@ -1,29 +1,34 @@
 <script setup>
     let email = document.getElementById("emailField");
     let password = document.getElementById("passwordField");
+    let showButton = document.getElementById("showButton");
 
     const show = () => {
         if (password.type === "text"){
             password.type = "password";
+            showButton.innerText = "Show password"
         }
         else {
             password.type = "text";
+            showButton.innerText = "Hide password"
         }
     }
 
     const check = () => {
-        if (email !== "" && password !== ""){
-            alert("Please introduce an e-mail and password");
-        }
+    if (email.value == "" || password.value == ""){
+        alert("Please introduce an e-mail and password");
+    }
     }
 </script>
 
 <template>
     <section>
         <h1>Welcome</h1>
-        <input id="emailField" type="text" placeholder="E-mail">
+        <label for="email">Email</label>
+        <input id="emailField" type="text" placeholder="Email">
+        <label for="password">Password</label>
         <input id="passwordField" type="password" placeholder="Password">
-        <button @click="show()">Show/hide password</button>
+        <button id="showButton" @click="show()">Show password</button>
         <input @click="check()" type="submit">
     </section>
 </template>
