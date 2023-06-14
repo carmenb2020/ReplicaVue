@@ -13,8 +13,8 @@ const router = createRouter({
 		component: HomeView
 	},
     {
-      path: '/screens2',
-      name: 'screens2',
+      path: '/screens',
+      name: 'screens',
       component: Screens2View
     },
     {

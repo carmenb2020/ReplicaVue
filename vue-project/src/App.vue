@@ -1,6 +1,6 @@
 <script setup>
   import { RouterLink, RouterView } from 'vue-router'
-  import PinkButton from './components/PinkButton.vue'
+  //import PinkButton from './components/PinkButton.vue'
   import LiNav from './components/LiNav.vue'
   import LiAButton from './components/LiAButton.vue'
   //import SquareButton from './components/SquareButton.vue'
@@ -21,7 +21,8 @@
         <ul class="top-menu">
           <RouterLink to="/"><LiNav msg="Description"/></RouterLink>
           <RouterLink to="features"><LiNav msg="Features"/></RouterLink>
-          <RouterLink to="review"><LiNav msg="Screens"/></RouterLink>
+          <RouterLink to="review"><LiNav msg="Reviews"/></RouterLink>
+          <RouterLink to="screens"><LiNav msg="Screens"/></RouterLink>
           <li class="dropdown">
             <a href="#">Extra</a>
             <div class="dropdown-content">
