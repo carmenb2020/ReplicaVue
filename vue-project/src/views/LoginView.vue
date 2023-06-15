@@ -31,7 +31,7 @@
         <label for="passwordField">Password</label>
         <input id="passwordField" type="password" placeholder="Password">
         <button id="showButton" type="button" @click="show()">Show password</button>
-        <input @click="check()" type="submit" value="Sign in">
+        <input id="signIn" @click="check()" type="submit" value="Sign in">
         <button id="forgot">Forgot password?</button>
     </form>
 </template>
@@ -44,6 +44,11 @@
         align-items: center;
         background-color:azure;
         font-weight: bold;
+        font-family: 'Open sans', sans-serif;
+    }
+
+    h2 {
+        text-shadow: 1px 1px 1px gray;
     }
 
     input {
@@ -56,9 +61,20 @@
         margin: 8px 24px;
     }
 
+    #signIn, #showButton {
+        color: white;
+        background-color: #ff556e;
+        border-radius: 1.75rem;
+        border: 2px solid #ff556e;
+        padding: 5px 20px;
+        min-width: 80px;
+        font-weight: bold;
+    }
+
     #forgot {
         border: none;
         background: none;
+        color: blue;
         text-decoration: underline;
     }
 </style>
