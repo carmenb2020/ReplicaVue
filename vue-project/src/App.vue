@@ -31,7 +31,7 @@
               <a href="#">Privacy Policy</a>
             </div>
           </li>
-          <LiAButton classButton="button-download__top" msg1="Login" refh="https://vuejs.org/guide/introduction.html"/>
+          <RouterLink to="login"><LiAButton classButton="button-download__top" msg1="Login" /></RouterLink>
         </ul>
       </nav>
     </div>
@@ -623,12 +623,12 @@ filter: invert(56%) sepia(95%) saturate(370%) hue-rotate(111deg)
     brightness(96%) contrast(93%);
 } */
 
-.section-numbers {
+/*.section-numbers {
     display: flex;
     justify-content: center;
     background-color: #e8eff6;
     padding: 60px;
-}
+}*/
 
 .section-bottom {
     padding-top: 100px;

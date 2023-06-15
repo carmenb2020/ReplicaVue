@@ -45,7 +45,7 @@
       </div>   
 </template>
 
-<style lang="css">
+<style scoped>
 
 .container-middle {
     margin-top: 50px;
