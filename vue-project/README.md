@@ -1,3 +1,23 @@
+# Project context
+
+The brand has a vanilla webpage already developed, and decided to switch it into a new framework, in this case Vue.js. Requeriments:
+
+Original design should be kept, with all the current characteristics.
+
+A login section should be added (and it should be able to show and hide the password)
+
+It sohould have all the rutes and components in the page
+
+The project should be managed with Jira and Confluence
+
+## Extras:
+
+Login form validation
+
+User page
+
+Test
+
 # vue-project
 
 This template should help get you started developing with Vue 3 in Vite.
