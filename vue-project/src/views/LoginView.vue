@@ -1,9 +1,8 @@
 <script setup>
-    let email = document.getElementById("emailField");
-    let password = document.getElementById("passwordField");
-    let showButton = document.getElementById("showButton");
-
     const show = () => {
+        let showButton = document.getElementById("showButton");
+        let password = document.getElementById("passwordField");
+
         if (password.type === "text"){
             password.type = "password";
             showButton.innerText = "Show password"
@@ -15,25 +14,40 @@
     }
 
     const check = () => {
-    if (email.value == "" || password.value == ""){
-        alert("Please introduce your email and password");
-    }
+        let email = document.getElementById("emailField");
+        let password = document.getElementById("passwordField");
+
+        if (email.value == "" || password.value == ""){
+            alert("Please introduce your email and password");
+        }
     }
 </script>
 
 <template>
     <form>
         <h2>Welcome</h2>
-        <label for="email">Email</label>
+        <label for="emailField">Email</label>
         <input id="emailField" type="email" placeholder="Email">
-        <label for="password">Password</label>
+        <label for="passwordField">Password</label>
         <input id="passwordField" type="password" placeholder="Password">
-        <button id="showButton" @click="show()">Show password</button>
+        <button id="showButton" type="button" @click="show()">Show password</button>
         <input @click="check()" type="submit" value="Sign in">
         <button>Forgot password?</button>
     </form>
 </template>
 
 <style>
+    form {
+        width: 100vw;
+        display: flex;
+        flex-direction: column
+    }
 
+    h2 {
+        text-align: center;
+    }
+
+    form :first-child {
+        max-width: 50%;
+    }    
 </style>
