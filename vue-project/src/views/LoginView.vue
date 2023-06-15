@@ -1,4 +1,7 @@
 <script setup>
+    import HomeView from '../views/DescriptionView.vue'
+    import { useRouter } from 'vue-router';
+
     const show = () => {
         let showButton = document.getElementById("showButton");
         let password = document.getElementById("passwordField");
@@ -13,12 +16,21 @@
         }
     }
 
+    const router=useRouter();
+
     const check = () => {
         let email = document.getElementById("emailField");
         let password = document.getElementById("passwordField");
 
         if (email.value == "" || password.value == ""){
             alert("Please introduce your email and password");
+        }
+        else {
+            router.push ( {
+                path: '/',
+                name: 'home',
+                component: HomeView
+            })
         }
     }
 </script>
