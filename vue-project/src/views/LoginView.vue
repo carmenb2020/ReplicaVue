@@ -25,7 +25,7 @@
     <form>
         <h2>Welcome</h2>
         <label for="email">Email</label>
-        <input id="emailField" type="text" placeholder="Email">
+        <input id="emailField" type="email" placeholder="Email">
         <label for="password">Password</label>
         <input id="passwordField" type="password" placeholder="Password">
         <button id="showButton" @click="show()">Show password</button>
