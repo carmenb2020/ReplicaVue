@@ -1,6 +1,4 @@
 <script>
-    import PinkButton from '../components/PinkButton.vue'
-    import HappyUsers from '../components/HappyUsers.vue'
 </script>
 <template>
     <section class="section-numbers">
