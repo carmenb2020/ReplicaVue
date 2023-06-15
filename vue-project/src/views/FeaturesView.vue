@@ -70,7 +70,7 @@
 
             <div class="container-buttons__privacy">
               <PinkButton classOption="alternativeNoImgPinkStyle"/>
-                <PinkButton classOption="alternativeStyle" msg="Privacity"/>
+                <PinkButton classOption="alternativeStyle" msg="Privacy"/>
               
             </div>
           </div>
