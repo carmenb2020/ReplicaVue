@@ -221,6 +221,7 @@ filter: invert(56%) sepia(95%) saturate(370%) hue-rotate(111deg)
 
 .container-buttons__privacy {
     margin-bottom: 50px;
+    display: flex;
 }
 
 .button-terms:hover {

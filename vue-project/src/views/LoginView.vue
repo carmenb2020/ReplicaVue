@@ -32,7 +32,7 @@
         <input id="passwordField" type="password" placeholder="Password">
         <button id="showButton" type="button" @click="show()">Show password</button>
         <input @click="check()" type="submit" value="Sign in">
-        <button>Forgot password?</button>
+        <button id="forgot">Forgot password?</button>
     </form>
 </template>
 
@@ -40,14 +40,25 @@
     form {
         width: 100vw;
         display: flex;
-        flex-direction: column
+        flex-direction: column;
+        align-items: center;
+        background-color:azure;
+        font-weight: bold;
     }
 
-    h2 {
+    input {
+        max-width: 25%;
         text-align: center;
+    }  
+
+    button, input {
+        border-radius: 4px;
+        margin: 8px 24px;
     }
 
-    form :first-child {
-        max-width: 50%;
-    }    
+    #forgot {
+        border: none;
+        background: none;
+        text-decoration: underline;
+    }
 </style>
