@@ -6,7 +6,7 @@
 <template>
     <section class="section-organize">
       <div class="section-organize__img">
-        <img id="organize-image" src="src/assets/Images/description-1-app.png" alt="imagen fondo 1" />
+        <img id="organize-image" src=".././assets/Images/description-1-app.png" alt="imagen fondo 1" />
       </div>
       <div class="section-organize__content">
         <h2 id="organize-title">Organize Your Time And Start Getting Results</h2>
@@ -45,7 +45,7 @@
             <div>
 
               <div class="section-calendar__checklist">
-                <img class="check-icon" src="src/assets/Images/checkIcon.png" alt="icono check" />
+                <img class="check-icon" src=".././assets/Images/checkIcon.png" alt="icono check" />
                 <p>
                   You can always add new tasks or change the settings of existing
                   ones in your calendar view or the app control panel
@@ -53,14 +53,14 @@
               </div>
 
               <div class="section-calendar__checklist">
-                <img class="check-icon" src="src/assets/Images/checkIcon.png" alt="icono check" />
+                <img class="check-icon" src=".././assets/Images/checkIcon.png" alt="icono check" />
                 <p>
                   It's easy to stay focused on your most important daily activities
                   that get you closer to meeting your goals
                 </p>
               </div>
               <div class="section-calendar__checklist">
-                <img class="check-icon" src="src/assets/Images/checkIcon.png" alt="icono check" />
+                <img class="check-icon" src=".././assets/Images/checkIcon.png" alt="icono check" />
                 <p>
                   Use phone reminders to free up your long term memory wich will
                   reduce stress and make you more productive
@@ -76,7 +76,7 @@
           </div>
         </div>
         
-        <img id="calendar-image" src="src/assets/Images/description-2-app.png" alt="imagen fondo 2" />
+        <img id="calendar-image" src="../assets/Images/description-2-app.png" alt="imagen fondo 2" />
       </section>   
 </template>
 
